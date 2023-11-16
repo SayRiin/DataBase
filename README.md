@@ -9,18 +9,26 @@
 |------------------|---------|--------------------------|
 | ID               | int     | Уникальный идентификатор |
 | FullName         | varchar | ФИО безаработного        |
-| Age              | int     | Возраст безработного     |
 | Gender           | varchar | Пол безработного         |
 | Address          | varchar | Адрес                    |
 | Phone_number     | varchar | Номер телефона           |
 | Email            | varchar | Электронная почта        |
+| Passport         | varchar | Пасспорт                 |
+| Birthday         | date    | Дата рождения            |
+| Education_level  | varchar | Уровень образования      |
 
-### Education
+### Vacancy
 | Поле             | Тип       | Описание                                      |
 |------------------|-----------|-----------------------------------------------|
 | ID               | int       | Уникальный идентификатор                      |
 | Unemployed_ID    | int       | Внешний ключ, ссылающийся на PersonalInfo(ID) |
-| Education_level  | varchar   | Уровень образования                           |
+| Job_vacancy      | varchar   | Вакансия                                      |
+| Summary          | varchar   | Резюме                                        |
+| Job_title        | varchar   | Название работы                               |
+| Company_name     | varchar   | Название компании                             |
+| Salary           | int       | Зарплата                                      |
+| Location         | varchar   | Местоположение                                |
+| Contact_email    | varchar   | Электронная почта компании                    |
 
 ### EmploymentHistory
 | Поле                    | Тип     | Описание                                      |
